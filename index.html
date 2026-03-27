@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CTLD International Conference 2026 – TMU</title>
+        <meta
+            name="description"
+            content="E-International Conference on Transforming Learning, Leadership & Development in a Rapidly Changing World – TMU CTLD, 12–13 May 2026."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- ───── SPLASH LOADER ───── -->
+        <div
+            class="splash"
+            id="splash"
+            aria-hidden="true"
+            role="status"
+            aria-label="Loading"
+        >
+            <div class="splash-inner">
+                <div class="splash-ring"></div>
+                <img
+                    src="https://cdn.jsdelivr.net/gh/Adi15Jain/assets@main/ctldConference/logo.png"
+                    alt="TMU Logo"
+                    class="splash-logo"
+                />
+            </div>
+            <p class="splash-text">TMU · CTLD</p>
+        </div>
+
+        <!-- ───── NAVBAR ───── -->
+        <nav class="navbar" id="navbar" aria-label="Primary navigation">
+            <div class="nav-container">
+                <a href="#hero" class="logo" aria-label="TMU CTLD Home">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/Adi15Jain/assets@main/ctldConference/logo.png"
+                        alt="TMU"
+                        class="logo-img"
+                        width="40"
+                        height="40"
+                    />
+                    <span class="logo-sep">|</span>
+                    <span class="logo-secondary">CTLD</span>
+                </a>
+                <ul class="nav-links" id="nav-links" role="list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#tracks" class="nav-link">Tracks</a></li>
+                    <li>
+                        <a href="#objectives" class="nav-link">Objectives</a>
+                    </li>
+                    <li><a href="#cfp" class="nav-link">CFP</a></li>
+                    <li><a href="#dates" class="nav-link">Dates & Fees</a></li>
+                    <li><a href="#committee" class="nav-link">Committee</a></li>
+                </ul>
+                <a href="#register" class="btn btn-primary nav-cta"
+                    >Register Now</a
+                >
+                <button
+                    class="hamburger"
+                    id="hamburger"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links"
+                >
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- mobile overlay -->
+        <div
+            class="mobile-overlay"
+            id="mobile-overlay"
+            aria-hidden="true"
+        ></div>
+
+        <main>
+            <!-- ───── HERO ───── -->
+            <section
+                id="hero"
+                class="section hero"
+                aria-labelledby="hero-heading"
+            >
+                <!-- Layered background -->
+                <div
+                    class="hero-bg-img"
+                    role="img"
+                    aria-label="University innovation hub background"
+                ></div>
+                <div class="hero-overlay"></div>
+                <!-- Three.js particle canvas -->
+                <canvas
+                    class="hero-canvas"
+                    id="heroCanvas"
+                    aria-hidden="true"
+                ></canvas>
+
+                <!-- Two-column content -->
+                <div class="hero-container">
+                    <!-- LEFT: Text content -->
+                    <div class="hero-left" data-anim="hero">
+                        <p class="hero-eyebrow">
+                            E-INTERNATIONAL CONFERENCE · TMU CTLD · 2026
+                        </p>
+                        <h1 id="hero-heading" class="hero-title">
+                            Transforming<br />
+                            Learning, Leadership<br />
+                            &amp; Development<br />
+                            <em>in a Rapidly Changing World</em>
+                        </h1>
+                        <p class="hero-sub">
+                            Teerthanker Mahaveer University –<br />Centre for
+                            Teaching, Learning and Development
+                        </p>
+                    </div>
+
+                    <!-- RIGHT: Glassmorphic info cards -->
+                    <div class="hero-right" data-anim="hero">
+                        <div class="hero-info-card glass-card">
+                            <div class="hic-row">
+                                <span class="hic-icon">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        aria-hidden="true"
+                                    >
+                                        <rect
+                                            x="3"
+                                            y="4"
+                                            width="18"
+                                            height="18"
+                                            rx="2"
+                                        />
+                                        <line x1="16" y1="2" x2="16" y2="6" />
+                                        <line x1="8" y1="2" x2="8" y2="6" />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span class="hic-label"
+                                        >Conference Dates</span
+                                    >
+                                    <span class="hic-value"
+                                        >12th – 13th May, 2026</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="hic-row">
+                                <span class="hic-icon">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        aria-hidden="true"
+                                    >
+                                        <circle cx="12" cy="12" r="10" />
+                                        <line x1="2" y1="12" x2="22" y2="12" />
+                                        <path
+                                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                                        />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span class="hic-label">Mode</span>
+                                    <span class="hic-value">Fully Online</span>
+                                </div>
+                            </div>
+                            <div class="hic-row hic-deadline">
+                                <span class="hic-icon deadline-icon">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        aria-hidden="true"
+                                    >
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span class="hic-label"
+                                        >Abstract Submission Deadline</span
+                                    >
+                                    <span class="hic-value deadline-val"
+                                        >26th April, 2026</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="hic-divider"></div>
+                            <div class="hic-actions">
+                                <a
+                                    href="#register"
+                                    class="btn btn-primary btn-lg hic-btn"
+                                    >Register Now</a
+                                >
+                                <a
+                                    href="#cfp"
+                                    class="btn btn-ghost btn-lg hic-btn"
+                                    >Submit Paper →</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /hero-container -->
+
+                <div class="scroll-indicator" aria-hidden="true">
+                    <span></span>
+                </div>
+            </section>
+
+            <!-- ───── ABOUT ───── -->
+            <section
+                id="about"
+                class="section about"
+                aria-labelledby="about-heading"
+            >
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-eyebrow">Background</p>
+                        <h2 id="about-heading" class="section-title">
+                            About the Conference
+                        </h2>
+                    </div>
+                    <div class="about-grid">
+                        <div class="glass-card about-body reveal">
+                            <p>
+                                The Centre for Teaching, Learning and
+                                Development (CTLD) is entrusted with the
+                                responsibility of strengthening student
+                                training, employability, faculty capability, and
+                                holistic development at Teerthanker Mahaveer
+                                University. In alignment with the National
+                                Education Policy (NEP) 2020, rapid digital
+                                transformation in education, and global shifts
+                                in workforce expectations, there is a compelling
+                                need for scholarly engagement on education,
+                                skills, pedagogy, and employability.
+                            </p>
+                            <p class="mt-1">
+                                It is proposed that CTLD organize an
+                                International Online Conference to invite
+                                research papers related to training, pedagogy,
+                                employability, and student development. The
+                                conference will be conducted completely online
+                                via an approved digital platform.
+                            </p>
+                        </div>
+                        <div class="about-stats reveal reveal-delay">
+                            <div class="stat-card glass-card">
+                                <span class="stat-num">6</span>
+                                <span class="stat-label">Research Tracks</span>
+                            </div>
+                            <div class="stat-card glass-card">
+                                <span class="stat-num">5</span>
+                                <span class="stat-label">Advisory Members</span>
+                            </div>
+                            <div class="stat-card glass-card">
+                                <span class="stat-num">2</span>
+                                <span class="stat-label">Conference Days</span>
+                            </div>
+                            <div class="stat-card glass-card impact-card">
+                                <p>
+                                    This conference will enhance TMU's global
+                                    academic reputation and strengthen CTLD's
+                                    training profile.
+                                </p>
+                                <span class="impact-tag">Expected Impact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ───── TRACKS ───── -->
+            <section
+                id="tracks"
+                class="section tracks"
+                aria-labelledby="tracks-heading"
+            >
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-eyebrow">Research Areas</p>
+                        <h2 id="tracks-heading" class="section-title">
+                            Conference Tracks
+                        </h2>
+                        <p class="section-desc">
+                            Six curated tracks covering the frontiers of
+                            learning, leadership and development.
+                        </p>
+                    </div>
+                    <div class="tracks-wrapper glass-card reveal">
+                        <div
+                            class="tabs-rail"
+                            role="tablist"
+                            aria-label="Conference tracks"
+                        >
+                            <button
+                                class="tab-btn active"
+                                role="tab"
+                                aria-selected="true"
+                                aria-controls="tab-1"
+                                data-tab="1"
+                            >
+                                Learning &amp; Pedagogy
+                            </button>
+                            <button
+                                class="tab-btn"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="tab-2"
+                                data-tab="2"
+                            >
+                                Leadership
+                            </button>
+                            <button
+                                class="tab-btn"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="tab-3"
+                                data-tab="3"
+                            >
+                                Skills &amp; Employability
+                            </button>
+                            <button
+                                class="tab-btn"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="tab-4"
+                                data-tab="4"
+                            >
+                                Tech &amp; Innovation
+                            </button>
+                            <button
+                                class="tab-btn"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="tab-5"
+                                data-tab="5"
+                            >
+                                Sustainability
+                            </button>
+                            <button
+                                class="tab-btn"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="tab-6"
+                                data-tab="6"
+                            >
+                                Global Perspectives
+                            </button>
+                        </div>
+                        <div class="tabs-body">
+                            <div
+                                class="tab-pane active"
+                                id="tab-1"
+                                role="tabpanel"
+                            >
+                                <h3>
+                                    Learning &amp; Pedagogical Transformation
+                                </h3>
+                                <ul class="track-list">
+                                    <li>
+                                        Future-Ready Learning Models and
+                                        Curriculum Design
+                                    </li>
+                                    <li>
+                                        Digital Pedagogy, Blended &amp;
+                                        Experiential Learning
+                                    </li>
+                                    <li>
+                                        AI, EdTech, and Smart Learning
+                                        Ecosystems
+                                    </li>
+                                    <li>
+                                        Outcome-Based Education &amp; Lifelong
+                                        Learning
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="tab-2" role="tabpanel">
+                                <h3>Leadership in a Disruptive Era</h3>
+                                <ul class="track-list">
+                                    <li>
+                                        Academic and Institutional Leadership
+                                    </li>
+                                    <li>
+                                        Change Management &amp; Adaptive
+                                        Leadership
+                                    </li>
+                                    <li>
+                                        Ethics, Values, and Responsible
+                                        Leadership
+                                    </li>
+                                    <li>
+                                        Governance, Policy and Quality Assurance
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="tab-3" role="tabpanel">
+                                <h3>Development, Skills &amp; Employability</h3>
+                                <ul class="track-list">
+                                    <li>
+                                        Skill Development for Future Workforce
+                                    </li>
+                                    <li>
+                                        Corporate Training, L&amp;D and Talent
+                                        Development
+                                    </li>
+                                    <li>
+                                        Entrepreneurship, Innovation &amp;
+                                        Startup Ecosystems
+                                    </li>
+                                    <li>Industry–Academia Collaboration</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="tab-4" role="tabpanel">
+                                <h3>Technology, Innovation &amp; Research</h3>
+                                <ul class="track-list">
+                                    <li>
+                                        Emerging Technologies and Digital
+                                        Transformation
+                                    </li>
+                                    <li>
+                                        Interdisciplinary Research &amp;
+                                        Innovation Practices
+                                    </li>
+                                    <li>
+                                        Intellectual Property Rights and
+                                        Research Commercialization
+                                    </li>
+                                    <li>Data-Driven Decision Making</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="tab-5" role="tabpanel">
+                                <h3>Sustainability &amp; Social Impact</h3>
+                                <ul class="track-list">
+                                    <li>
+                                        Education for Sustainable Development
+                                    </li>
+                                    <li>
+                                        Inclusive Growth, Equity and
+                                        Accessibility
+                                    </li>
+                                    <li>
+                                        Social Innovation and Community
+                                        Engagement
+                                    </li>
+                                    <li>
+                                        Global Citizenship and Ethical
+                                        Responsibility
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="tab-6" role="tabpanel">
+                                <h3>Global Perspectives &amp; Collaboration</h3>
+                                <ul class="track-list">
+                                    <li>Internationalization of Education</li>
+                                    <li>
+                                        Cross-Cultural Leadership &amp; Global
+                                        Competencies
+                                    </li>
+                                    <li>
+                                        Global Best Practices in Learning &amp;
+                                        Development
+                                    </li>
+                                    <li>
+                                        Collaborative Networks and Partnerships
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ───── OBJECTIVES ───── -->
+            <section
+                id="objectives"
+                class="section objectives"
+                aria-labelledby="obj-heading"
+            >
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-eyebrow">Why Attend</p>
+                        <h2 id="obj-heading" class="section-title">
+                            Conference Objectives
+                        </h2>
+                    </div>
+                    <div class="obj-grid">
+                        <div
+                            class="glass-card obj-card reveal"
+                            style="--delay: 0s"
+                        >
+                            <span class="obj-num">01</span>
+                            <p>
+                                Encourage international academic research in
+                                education, skills, and employability.
+                            </p>
+                        </div>
+                        <div
+                            class="glass-card obj-card reveal"
+                            style="--delay: 0.1s"
+                        >
+                            <span class="obj-num">02</span>
+                            <p>
+                                Provide a global platform for sharing
+                                innovations and best practices.
+                            </p>
+                        </div>
+                        <div
+                            class="glass-card obj-card reveal"
+                            style="--delay: 0.2s"
+                        >
+                            <span class="obj-num">03</span>
+                            <p>
+                                Strengthen CTLD's academic identity and
+                                contribution to higher education discourse.
+                            </p>
+                        </div>
+                        <div
+                            class="glass-card obj-card reveal"
+                            style="--delay: 0.3s"
+                        >
+                            <span class="obj-num">04</span>
+                            <p>
+                                Promote interdisciplinary and international
+                                collaboration.
+                            </p>
+                        </div>
+                        <div
+                            class="glass-card obj-card reveal"
+                            style="--delay: 0.4s"
+                        >
+                            <span class="obj-num">05</span>
+                            <p>
+                                Bridge the gap between academia, industry, and
+                                skill development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ───── CFP & OUTPUTS ───── -->
+            <section id="cfp" class="section cfp" aria-labelledby="cfp-heading">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-eyebrow">Submissions</p>
+                        <h2 id="cfp-heading" class="section-title">
+                            Call for Papers
+                        </h2>
+                    </div>
+                    <div class="cfp-grid">
+                        <div class="glass-card cfp-card reveal">
+                            <h3 class="card-title">Submission Guidelines</h3>
+                            <ul class="info-list">
+                                <li>
+                                    <span class="info-icon">📄</span>
+                                    <div>
+                                        <strong>Abstract:</strong> 250–300 words
+                                        with keywords
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="info-icon">📋</span>
+                                    <div>
+                                        <strong>Full Paper:</strong> 3,000–5,000
+                                        words
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="info-icon">🔤</span>
+                                    <div>
+                                        <strong>Formatting:</strong> Times New
+                                        Roman, 12 pt, 1.5 spacing
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="info-icon">📖</span>
+                                    <div>
+                                        <strong>Citation Style:</strong> APA
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="notice-box">
+                                <p>
+                                    <strong>Peer Review:</strong> All
+                                    submissions will undergo rigorous peer
+                                    review by an expert committee.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card cfp-card reveal reveal-delay">
+                            <h3 class="card-title">Conference Outputs</h3>
+                            <ul class="output-list">
+                                <li class="output-item">
+                                    <span class="output-icon">📚</span>
+                                    <div>
+                                        <strong>ISBN Proceedings</strong>
+                                        <span
+                                            >Hard-Bound Edited Conference
+                                            Proceedings</span
+                                        >
+                                    </div>
+                                </li>
+                                <li class="output-item">
+                                    <span class="output-icon">🏅</span>
+                                    <div>
+                                        <strong>E-Certificates</strong>
+                                        <span
+                                            >For all presenters and
+                                            participants</span
+                                        >
+                                    </div>
+                                </li>
+                                <li class="output-item">
+                                    <span class="output-icon">🏆</span>
+                                    <div>
+                                        <strong>Best Paper Award</strong>
+                                        <span>Cash prize of ₹2,100/-</span>
+                                    </div>
+                                </li>
+                                <li class="output-item">
+                                    <span class="output-icon">🌐</span>
+                                    <div>
+                                        <strong>Digital Proceedings</strong>
+                                        <span
+                                            >Hosted permanently on the TMU
+                                            website</span
+                                        >
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ───── DATES & FEES ───── -->
+            <section
+                id="dates"
+                class="section dates"
+                aria-labelledby="dates-heading"
+            >
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-eyebrow">Planning</p>
+                        <h2 id="dates-heading" class="section-title">
+                            Dates &amp; Registration
+                        </h2>
+                    </div>
+                    <div class="dates-grid">
+                        <!-- Timeline -->
+                        <div class="glass-card timeline-card reveal">
+                            <h3 class="card-title">Important Dates</h3>
+                            <ol
+                                class="timeline"
+                                aria-label="Conference timeline"
+                            >
+                                <li class="tl-item">
+                                    <div class="tl-dot"></div>
+                                    <div>
+                                        <span class="tl-date"
+                                            >26 April, 2026</span
+                                        >
+                                        <span class="tl-label"
+                                            >Abstract Submission Deadline</span
+                                        >
+                                    </div>
+                                </li>
+                                <li class="tl-item tl-highlight">
+                                    <div class="tl-dot"></div>
+                                    <div>
+                                        <span class="tl-date"
+                                            >12–13 May, 2026</span
+                                        >
+                                        <span class="tl-label"
+                                            >Conference Days 🎯</span
+                                        >
+                                    </div>
+                                </li>
+                                <li class="tl-item">
+                                    <div class="tl-dot"></div>
+                                    <div>
+                                        <span class="tl-date"
+                                            >25 May, 2026</span
+                                        >
+                                        <span class="tl-label"
+                                            >Full Paper Submission</span
+                                        >
+                                    </div>
+                                </li>
+                                <li class="tl-item">
+                                    <div class="tl-dot"></div>
+                                    <div>
+                                        <span class="tl-date"
+                                            >5 June, 2026</span
+                                        >
+                                        <span class="tl-label"
+                                            >Revision of Paper</span
+                                        >
+                                    </div>
+                                </li>
+                                <li class="tl-item tl-last">
+                                    <div class="tl-dot"></div>
+                                    <div>
+                                        <span class="tl-date"
+                                            >20 June, 2026</span
+                                        >
+                                        <span class="tl-label"
+                                            >Final Paper Submission</span
+                                        >
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <!-- Fees -->
+                        <div class="reveal reveal-delay">
+                            <h3 class="card-title fee-title">
+                                Registration Fees
+                            </h3>
+                            <div class="fee-grid">
+                                <div class="glass-card fee-card">
+                                    <span class="fee-category"
+                                        >Academicians / Professionals</span
+                                    >
+                                    <div class="fee-prices">
+                                        <span class="price-inr">₹1,500</span>
+                                        <span class="price-usd">/ $60</span>
+                                    </div>
+                                    <span class="fee-note"
+                                        >India / International</span
+                                    >
+                                </div>
+                                <div class="glass-card fee-card">
+                                    <span class="fee-category"
+                                        >Ph.D. / PG Scholars</span
+                                    >
+                                    <div class="fee-prices">
+                                        <span class="price-inr">₹1,000</span>
+                                        <span class="price-usd">/ $50</span>
+                                    </div>
+                                    <span class="fee-note"
+                                        >India / International</span
+                                    >
+                                </div>
+                                <div class="glass-card fee-card">
+                                    <span class="fee-category"
+                                        >UG Students</span
+                                    >
+                                    <div class="fee-prices">
+                                        <span class="price-inr">₹500</span>
+                                        <span class="price-usd">/ $30</span>
+                                    </div>
+                                    <span class="fee-note"
+                                        >India / International</span
+                                    >
+                                </div>
+                                <div
+                                    class="glass-card fee-card fee-card-highlight"
+                                >
+                                    <span class="fee-category"
+                                        >TMU Faculty / Students</span
+                                    >
+                                    <div class="fee-prices">
+                                        <span class="price-inr">₹500</span>
+                                    </div>
+                                    <span class="fee-note"
+                                        >Special institutional rate</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ───── COMMITTEE ───── -->
+            <section
+                id="committee"
+                class="section committee"
+                aria-labelledby="committee-heading"
+            >
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-eyebrow">Leadership</p>
+                        <h2 id="committee-heading" class="section-title">
+                            Organizing Structure
+                        </h2>
+                    </div>
+
+                    <!-- Chief Patrons -->
+                    <h3 class="sub-heading reveal">Chief Patrons</h3>
+                    <div class="people-grid cols-3 reveal">
+                        <div class="glass-card person-card patron-card">
+                            <div class="person-avatar">SJ</div>
+                            <h4>Shri Suresh Jain</h4>
+                            <p class="person-role">Chancellor</p>
+                            <p class="person-org">
+                                Teerthanker Mahaveer University
+                            </p>
+                        </div>
+                        <div class="glass-card person-card patron-card">
+                            <div class="person-avatar">MJ</div>
+                            <h4>Shri Manish Jain</h4>
+                            <p class="person-role">Group Vice-Chairman</p>
+                            <p class="person-org">
+                                Teerthanker Mahaveer University
+                            </p>
+                        </div>
+                        <div class="glass-card person-card patron-card">
+                            <div class="person-avatar">AJ</div>
+                            <h4>Shri Akshat Jain</h4>
+                            <p class="person-role">Executive Director</p>
+                            <p class="person-org">
+                                Teerthanker Mahaveer University
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Patrons/Chairs -->
+                    <h3 class="sub-heading reveal">Patrons &amp; Chairs</h3>
+                    <div class="people-grid cols-4 reveal">
+                        <div class="glass-card person-card role-card">
+                            <span class="role-tag">Patron</span>
+                            <h4>Hon'ble Vice Chancellor</h4>
+                            <p class="person-org">TMU</p>
+                        </div>
+                        <div class="glass-card person-card role-card">
+                            <span class="role-tag">Chairperson</span>
+                            <h4>Dean Academics</h4>
+                            <p class="person-org">TMU</p>
+                        </div>
+                        <div class="glass-card person-card role-card">
+                            <span class="role-tag">Conference Director</span>
+                            <h4>Director, CTLD</h4>
+                            <p class="person-org">TMU</p>
+                        </div>
+                        <div class="glass-card person-card role-card">
+                            <span class="role-tag">Conference Secretary</span>
+                            <h4>Deputy Director, CTLD</h4>
+                            <p class="person-org">TMU</p>
+                        </div>
+                    </div>
+
+                    <!-- Advisory Board -->
+                    <h3 class="sub-heading reveal">Advisory Board</h3>
+                    <div class="people-grid cols-3 reveal">
+                        <div class="glass-card person-card advisor-card">
+                            <div class="person-avatar av-advisor">PS</div>
+                            <h4>Mr. Prem Singh</h4>
+                            <p class="person-role">
+                                President-Group HR (Group CHRO)
+                            </p>
+                            <p class="person-org">JK Organisation</p>
+                        </div>
+                        <div class="glass-card person-card advisor-card">
+                            <div class="person-avatar av-advisor">NP</div>
+                            <h4>Nayan Parikh</h4>
+                            <p class="person-role">
+                                Nayan Parikh &amp; Consultants
+                            </p>
+                            <p class="person-org">IIM Ahmedabad Alumnus</p>
+                        </div>
+                        <div class="glass-card person-card advisor-card">
+                            <div class="person-avatar av-advisor">RG</div>
+                            <h4>Dr. R.S. Goswami</h4>
+                            <p class="person-role">Founder &amp; CEO</p>
+                            <p class="person-org">Hind Pharma</p>
+                        </div>
+                        <div class="glass-card person-card advisor-card">
+                            <div class="person-avatar av-advisor">HW</div>
+                            <h4>Himanshu Jessie Wadia</h4>
+                            <p class="person-role">
+                                Director PgM | AI Innovation &amp; Automation
+                            </p>
+                            <p class="person-org">
+                                Amdocs UAE / Middle East Region
+                            </p>
+                        </div>
+                        <div class="glass-card person-card advisor-card">
+                            <div class="person-avatar av-advisor">BS</div>
+                            <h4>Bhumika Shah</h4>
+                            <p class="person-role">Data Solution Engineer</p>
+                            <p class="person-org">
+                                University of Cumberlands, US
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Core & Working Committee -->
+                    <div class="committee-grid reveal">
+                        <div class="glass-card">
+                            <h3 class="card-title">Core Committee</h3>
+                            <div class="core-list">
+                                <div class="core-item">
+                                    <strong
+                                        >Prof. (Dr.) Pankaj Kumar Singh</strong
+                                    >
+                                    <span>Director-CTLD, TMU</span>
+                                </div>
+                                <div class="core-item">
+                                    <strong>Dr. Dilip Dutt Varshney</strong>
+                                    <span>Deputy Director-CTLD, TMU</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-card">
+                            <h3 class="card-title">Working Committee</h3>
+                            <div class="working-grid">
+                                <div class="wc-item">
+                                    <strong>Dr. Jasmine Stephen</strong
+                                    ><span>Chief Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Mr. Anant Bhardwaj</strong
+                                    ><span>Master Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Ms. Mani Saraswat</strong
+                                    ><span>Senior Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Mr. Pradeep Panwar</strong
+                                    ><span>Senior Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Mr. Sagar Pratap Singh</strong
+                                    ><span>Senior Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Ms. Anvesha Sisodiya</strong
+                                    ><span>Executive Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Mr. Deepak Katiyar</strong
+                                    ><span>Executive Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Mr. Ritu Rajan</strong
+                                    ><span>Senior Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Ms. Rachna Saxena</strong
+                                    ><span>Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Mr. Rajeev Ranjan</strong
+                                    ><span>Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Mr. Gopal Krishan Mishra</strong
+                                    ><span>Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Mr. Jatin Dua</strong
+                                    ><span>Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Mr. Vijay Kumar</strong
+                                    ><span>Trainer</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Ms. Gauri Takiyar</strong
+                                    ><span>Trainer</span>
+                                </div>
+                            </div>
+                            <p class="small-note">All members from CTLD, TMU</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ───── REGISTER CTA ───── -->
+            <section
+                id="register"
+                class="section cta"
+                aria-labelledby="cta-heading"
+            >
+                <div class="container">
+                    <div class="cta-card glass-card reveal">
+                        <p class="section-eyebrow">Join the Conversation</p>
+                        <h2 id="cta-heading" class="cta-title">
+                            Ready to Contribute?
+                        </h2>
+                        <p class="cta-desc">
+                            Submit your research and be part of a global
+                            academic dialogue on the future of learning,
+                            leadership and development.
+                        </p>
+                        <div class="cta-actions">
+                            <a href="#register" class="btn btn-primary btn-lg"
+                                >Register Now</a
+                            >
+                            <a
+                                href="#cfp"
+                                class="btn btn-ghost btn-lg cta-ghost"
+                                >Submit Abstract</a
+                            >
+                        </div>
+                        <p class="cta-footer-note">
+                            Submitted by:
+                            <strong>Prof. (Dr.) Pankaj Kumar Singh</strong>,
+                            Director, CTLD
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ───── FOOTER ───── -->
+        <footer class="footer" role="contentinfo">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-primary">TMU</span>
+                    <span class="logo-sep">|</span>
+                    <span class="logo-secondary">CTLD</span>
+                    <p>
+                        Centre for Teaching, Learning and Development<br />Teerthanker
+                        Mahaveer University
+                    </p>
+                </div>
+                <p class="footer-copy">
+                    &copy; 2026 CTLD, TMU. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
