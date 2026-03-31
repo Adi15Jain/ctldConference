@@ -223,32 +223,42 @@
   /* ══════════════════════════════════════════════════
      7. TRACK TABS + KEYBOARD NAV
   ══════════════════════════════════════════════════ */
-  const tabBtns  = document.querySelectorAll('.tab-btn');
-  const tabPanes = document.querySelectorAll('.tab-pane');
+  const trackTabs  = document.querySelectorAll('.tracks-tab');
+  const trackPanes = document.querySelectorAll('.tracks-pane');
+  const trackPips  = document.querySelectorAll('.track-pip');
+  const tracksCurrent = document.getElementById('tracks-current');
 
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const target = btn.dataset.tab;
-      tabBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
-      tabPanes.forEach(p => p.classList.remove('active'));
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected', 'true');
-      const pane = document.getElementById(`tab-${target}`);
-      if (pane) pane.classList.add('active');
+  function switchTrack(num) {
+    // Tabs
+    trackTabs.forEach(t => {
+      const active = t.dataset.track === num;
+      t.classList.toggle('active', active);
+      t.setAttribute('aria-selected', active ? 'true' : 'false');
     });
-  });
+    // Panes
+    trackPanes.forEach(p => p.classList.toggle('active', p.id === `tracks-pane-${num}`));
+    // Pips
+    trackPips.forEach(p => p.classList.toggle('active', p.dataset.track === num));
+    // Counter
+    if (tracksCurrent) tracksCurrent.textContent = num;
+  }
 
-  const tabsRail = document.querySelector('.tabs-rail');
-  if (tabsRail) {
-    tabsRail.addEventListener('keydown', e => {
-      const cur = [...tabBtns].indexOf(document.activeElement);
+  trackTabs.forEach(btn => btn.addEventListener('click', () => switchTrack(btn.dataset.track)));
+  trackPips.forEach(pip => pip.addEventListener('click', () => switchTrack(pip.dataset.track)));
+
+  // Keyboard navigation on the rail
+  const tracksRail = document.querySelector('.tracks-rail');
+  if (tracksRail) {
+    tracksRail.addEventListener('keydown', e => {
+      const cur = [...trackTabs].indexOf(document.activeElement);
       if (cur === -1) return;
       let next = -1;
-      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (cur + 1) % tabBtns.length;
-      if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   next = (cur - 1 + tabBtns.length) % tabBtns.length;
-      if (next >= 0) { e.preventDefault(); tabBtns[next].focus(); tabBtns[next].click(); }
+      if (e.key === 'ArrowDown'  || e.key === 'ArrowRight') next = (cur + 1) % trackTabs.length;
+      if (e.key === 'ArrowUp'    || e.key === 'ArrowLeft')  next = (cur - 1 + trackTabs.length) % trackTabs.length;
+      if (next >= 0) { e.preventDefault(); trackTabs[next].focus(); trackTabs[next].click(); }
     });
   }
+
 
 
   /* ══════════════════════════════════════════════════
@@ -267,15 +277,11 @@
 
 
   /* ══════════════════════════════════════════════════
-     9. HERO BG PARALLAX + OBJ STAGGER
+     9. OBJ CARD STAGGER
+     Parallax removed — hero background is fully static,
+     controlled only by CSS. This prevents any scroll-
+     driven image shift or snap-back entirely.
   ══════════════════════════════════════════════════ */
-  const heroBg = document.querySelector('.hero-bg-img');
-  if (heroBg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY < window.innerHeight)
-        heroBg.style.transform = `scale(1.06) translateY(${window.scrollY * 0.22}px)`;
-    }, { passive: true });
-  }
 
   document.querySelectorAll('.obj-card').forEach((card, i) => {
     card.style.setProperty('--delay', `${i * 0.1}s`);
