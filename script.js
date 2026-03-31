@@ -217,6 +217,9 @@
   });
   overlay.addEventListener('click', closeMenu);
   navLinks.forEach(link => link.addEventListener('click', closeMenu));
+  // Close when drawer CTA is tapped
+  const drawerCta = document.getElementById('nav-drawer-cta');
+  if (drawerCta) drawerCta.addEventListener('click', closeMenu);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 
 
