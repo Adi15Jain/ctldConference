@@ -55,6 +55,27 @@
                     <span class="logo-secondary">CTLD</span>
                 </a>
                 <ul class="nav-links" id="nav-links" role="list">
+                    <li class="nav-close-wrap">
+                        <button
+                            class="nav-close-btn"
+                            id="nav-close-btn"
+                            aria-label="Close menu"
+                        >
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#tracks" class="nav-link">Tracks</a></li>
                     <li>
@@ -63,11 +84,14 @@
                     <li><a href="#cfp" class="nav-link">CFP</a></li>
                     <li><a href="#dates" class="nav-link">Dates & Fees</a></li>
                     <li><a href="#committee" class="nav-link">Committee</a></li>
-                    <li class="nav-drawer-cta-wrap"><a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfr9hGxNYfHPMJTVd9a6eZiggVtqf1LmcST9tQIDSrsd5xs5g/viewform"
-                        class="nav-drawer-cta"
-                        id="nav-drawer-cta"
-                    >Register Now</a></li>
+                    <li class="nav-drawer-cta-wrap">
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfr9hGxNYfHPMJTVd9a6eZiggVtqf1LmcST9tQIDSrsd5xs5g/viewform"
+                            class="nav-drawer-cta"
+                            id="nav-drawer-cta"
+                            >Register Now</a
+                        >
+                    </li>
                 </ul>
                 <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSfr9hGxNYfHPMJTVd9a6eZiggVtqf1LmcST9tQIDSrsd5xs5g/viewform"
@@ -473,6 +497,53 @@
                 </div>
 
                 <div class="tracks-inner">
+                    <!-- MOBILE ONLY: header + bottom-sheet theme selector -->
+                    <div class="tracks-mobile-header">
+                        <div class="tracks-mobile-meta">
+                            <span class="tracks-eyebrow">Research Areas</span>
+                            <h2
+                                id="tracks-heading-mobile"
+                                class="tracks-heading"
+                            >
+                                Conference Tracks
+                            </h2>
+                            <p class="tracks-subline">
+                                Six curated themes spanning the frontiers of
+                                learning, leadership &amp; development.
+                            </p>
+                        </div>
+
+                        <!-- Trigger button — tapping opens the bottom sheet -->
+                        <button
+                            class="tracks-sheet-trigger"
+                            id="tracks-sheet-trigger"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            aria-controls="tracks-sheet"
+                        >
+                            <span class="tracks-sheet-trigger-num">01</span>
+                            <span
+                                class="tracks-sheet-trigger-label"
+                                id="tracks-sheet-label"
+                                >Learning &amp; Pedagogy</span
+                            >
+                            <svg
+                                class="tracks-sheet-trigger-icon"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                    </div>
+
                     <!-- LEFT: Header + Vertical tab rail -->
                     <div class="tracks-left reveal">
                         <div class="tracks-header">
@@ -1862,19 +1933,65 @@
                     <ul class="footer-contact">
                         <li>
                             <span class="fc-icon">
-                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <svg
+                                    width="15"
+                                    height="15"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
                             </span>
-                            <a href="mailto:ctldconference@tmu.ac.in">ctldconference@tmu.ac.in</a>
+                            <a href="mailto:ctldconference@tmu.ac.in"
+                                >ctldconference@tmu.ac.in</a
+                            >
                         </li>
                         <li>
                             <span class="fc-icon">
-                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <svg
+                                    width="15"
+                                    height="15"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                                    />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
                             </span>
-                            <span>Teerthanker Mahaveer University,<br>Moradabad, U.P., India &ndash; 244001</span>
+                            <span
+                                >Teerthanker Mahaveer University,<br />Moradabad,
+                                U.P., India &ndash; 244001</span
+                            >
                         </li>
                         <li>
                             <span class="fc-icon">
-                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 15.92z"/></svg>
+                                <svg
+                                    width="15"
+                                    height="15"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 15.92z"
+                                    />
+                                </svg>
                             </span>
                             <span>+91-9520966416</span>
                         </li>
@@ -1966,10 +2083,21 @@
                             class="social-btn"
                             aria-label="Website"
                         >
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"/>
-                                <line x1="2" y1="12" x2="22" y2="12"/>
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                                />
                             </svg>
                         </a>
                     </div>
@@ -1986,6 +2114,178 @@
                 </div>
             </div>
         </footer>
+
+        <!-- TRACKS BOTTOM SHEET (moved to body root so position:fixed works correctly) -->
+        <div
+            class="tracks-sheet-overlay"
+            id="tracks-sheet-overlay"
+            aria-hidden="true"
+        ></div>
+        <div
+            class="tracks-sheet"
+            id="tracks-sheet"
+            role="listbox"
+            aria-label="Select a conference track"
+            aria-hidden="true"
+        >
+            <div class="tracks-sheet-handle-wrap" id="tracks-sheet-handle">
+                <div class="tracks-sheet-handle"></div>
+            </div>
+            <div class="tracks-sheet-header">
+                <p class="tracks-sheet-title">Six Curated Themes</p>
+                <p class="tracks-sheet-sub">
+                    Select a track to explore its topics
+                </p>
+            </div>
+            <ul class="tracks-sheet-list">
+                <li
+                    class="tracks-sheet-item active"
+                    data-track="1"
+                    role="option"
+                    aria-selected="true"
+                >
+                    <span class="tracks-sheet-item-num">01</span>
+                    <span class="tracks-sheet-item-name"
+                        >Learning &amp; Pedagogy</span
+                    >
+                    <svg
+                        class="tracks-sheet-item-check"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                </li>
+                <li
+                    class="tracks-sheet-item"
+                    data-track="2"
+                    role="option"
+                    aria-selected="false"
+                >
+                    <span class="tracks-sheet-item-num">02</span>
+                    <span class="tracks-sheet-item-name">Leadership</span>
+                    <svg
+                        class="tracks-sheet-item-check"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                </li>
+                <li
+                    class="tracks-sheet-item"
+                    data-track="3"
+                    role="option"
+                    aria-selected="false"
+                >
+                    <span class="tracks-sheet-item-num">03</span>
+                    <span class="tracks-sheet-item-name"
+                        >Skills &amp; Employability</span
+                    >
+                    <svg
+                        class="tracks-sheet-item-check"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                </li>
+                <li
+                    class="tracks-sheet-item"
+                    data-track="4"
+                    role="option"
+                    aria-selected="false"
+                >
+                    <span class="tracks-sheet-item-num">04</span>
+                    <span class="tracks-sheet-item-name"
+                        >Tech &amp; Innovation</span
+                    >
+                    <svg
+                        class="tracks-sheet-item-check"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                </li>
+                <li
+                    class="tracks-sheet-item"
+                    data-track="5"
+                    role="option"
+                    aria-selected="false"
+                >
+                    <span class="tracks-sheet-item-num">05</span>
+                    <span class="tracks-sheet-item-name">Sustainability</span>
+                    <svg
+                        class="tracks-sheet-item-check"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                </li>
+                <li
+                    class="tracks-sheet-item"
+                    data-track="6"
+                    role="option"
+                    aria-selected="false"
+                >
+                    <span class="tracks-sheet-item-num">06</span>
+                    <span class="tracks-sheet-item-name"
+                        >Global Perspectives</span
+                    >
+                    <svg
+                        class="tracks-sheet-item-check"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                </li>
+            </ul>
+        </div>
 
         <script src="script.js"></script>
     </body>
