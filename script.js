@@ -426,6 +426,31 @@
         pip.addEventListener("click", () => switchTrack(pip.dataset.track)),
     );
 
+    const trackPrevBtn = document.getElementById("track-prev-btn");
+    const trackNextBtn = document.getElementById("track-next-btn");
+
+    if (trackPrevBtn && trackNextBtn) {
+        trackPrevBtn.addEventListener("click", () => {
+            const currentTab = Array.from(trackTabs).findIndex((t) =>
+                t.classList.contains("active"),
+            );
+            if (currentTab !== -1) {
+                const prev =
+                    (currentTab - 1 + trackTabs.length) % trackTabs.length;
+                switchTrack(trackTabs[prev].dataset.track);
+            }
+        });
+        trackNextBtn.addEventListener("click", () => {
+            const currentTab = Array.from(trackTabs).findIndex((t) =>
+                t.classList.contains("active"),
+            );
+            if (currentTab !== -1) {
+                const next = (currentTab + 1) % trackTabs.length;
+                switchTrack(trackTabs[next].dataset.track);
+            }
+        });
+    }
+
     // Bottom-sheet item selection
     sheetItems.forEach((item) => {
         item.addEventListener("click", () => {
@@ -478,7 +503,50 @@
     }
 
     /* ══════════════════════════════════════════════════
-     9. OBJ CARD STAGGER
+     10. POSTER MODAL
+  ══════════════════════════════════════════════════ */
+    const posterTrigger = document.getElementById("cfp-poster-trigger");
+    const posterModal = document.getElementById("cfp-poster-modal");
+    const posterCloseBg = document.getElementById("cfp-modal-close-bg");
+    const posterCloseBtn = document.getElementById("cfp-modal-close-btn");
+
+    if (posterTrigger && posterModal) {
+        const openPoster = () => {
+            posterModal.classList.add("active");
+            posterModal.setAttribute("aria-hidden", "false");
+            lockBodyScroll();
+        };
+
+        const closePoster = () => {
+            posterModal.classList.remove("active");
+            posterModal.setAttribute("aria-hidden", "true");
+            unlockBodyScroll();
+        };
+
+        posterTrigger.addEventListener("click", openPoster);
+        posterTrigger.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                openPoster();
+            }
+        });
+
+        if (posterCloseBg) posterCloseBg.addEventListener("click", closePoster);
+        if (posterCloseBtn)
+            posterCloseBtn.addEventListener("click", closePoster);
+
+        document.addEventListener("keydown", (e) => {
+            if (
+                e.key === "Escape" &&
+                posterModal.classList.contains("active")
+            ) {
+                closePoster();
+            }
+        });
+    }
+
+    /* ══════════════════════════════════════════════════
+     11. OBJ CARD STAGGER
      Parallax removed — hero background is fully static,
      controlled only by CSS. This prevents any scroll-
      driven image shift or snap-back entirely.

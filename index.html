@@ -14,10 +14,7 @@
             href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="icon"
-            href="https://cdn.jsdelivr.net/gh/Adi15Jain/assets@main/ctldConference/logo.png"
-        />
+        <link rel="icon" href="images/logo.png" />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -31,11 +28,7 @@
         >
             <div class="splash-inner">
                 <div class="splash-ring"></div>
-                <img
-                    src="https://cdn.jsdelivr.net/gh/Adi15Jain/assets@main/ctldConference/logo.png"
-                    alt="TMU Logo"
-                    class="splash-logo"
-                />
+                <img src="images/logo.png" alt="TMU Logo" class="splash-logo" />
             </div>
             <p class="splash-text">TMU · CTLD</p>
         </div>
@@ -45,7 +38,7 @@
             <div class="nav-container">
                 <a href="#hero" class="logo" aria-label="TMU CTLD Home">
                     <img
-                        src="https://cdn.jsdelivr.net/gh/Adi15Jain/assets@main/ctldConference/logo.png"
+                        src="images/logo.png"
                         alt="TMU"
                         class="logo-img"
                         width="40"
@@ -189,7 +182,7 @@
                                         >Conference Dates</span
                                     >
                                     <span class="hic-value"
-                                        >12th – 13th May, 2026</span
+                                        >12 – 13 May 2026</span
                                     >
                                 </div>
                             </div>
@@ -236,7 +229,7 @@
                                         >Abstract Submission Deadline</span
                                     >
                                     <span class="hic-value deadline-val"
-                                        >4th May, 2026</span
+                                        >04 May 2026</span
                                     >
                                 </div>
                             </div>
@@ -248,7 +241,7 @@
                                     >Register Now</a
                                 >
                                 <a
-                                    href="Brochure.pdf"
+                                    href="Brochure.png"
                                     target="_blank"
                                     class="btn btn-ghost btn-lg hic-btn"
                                     >View Brochure</a
@@ -388,8 +381,7 @@
                                     >Conference Days</span
                                 >
                                 <span class="metric-desc"
-                                    >12th &amp; 13th May, 2026 · Fully
-                                    virtual</span
+                                    >12 - 13 May 2026 · Fully virtual</span
                                 >
                             </div>
                         </div>
@@ -453,7 +445,7 @@
                                     >Submission Deadline</span
                                 >
                                 <span class="metric-desc"
-                                    >Abstract submission closes 04th May,
+                                    >Abstract submission closes 04 May
                                     2026</span
                                 >
                             </div>
@@ -476,10 +468,19 @@
                             </svg>
                         </span>
                         <div class="impact-banner-text">
-                            <strong>Expected Impact</strong>
-                            This conference will enhance TMU's global academic
-                            reputation and strengthen CTLD's national training
-                            profile.
+                            <strong>Conference Impact</strong>
+                            The proposed International Conference will provide a
+                            global platform for faculty, researchers, and
+                            practitioners to exchange ideas, share best
+                            practices, and contribute to emerging knowledge in
+                            education, skills, and employability. It will
+                            enhance participants’ academic visibility, promote
+                            scholarly writing and publication, and create
+                            opportunities for national and international
+                            collaboration. The conference will also offer
+                            valuable insights into contemporary challenges and
+                            future-ready competencies required in a rapidly
+                            evolving educational and professional landscape.
                         </div>
                     </div>
                 </div>
@@ -812,40 +813,86 @@
 
                             <!-- Progress pip strip -->
                             <div class="tracks-progress" aria-hidden="true">
-                                <button
-                                    class="track-pip active"
-                                    data-track="1"
-                                    tabindex="-1"
-                                ></button>
-                                <button
-                                    class="track-pip"
-                                    data-track="2"
-                                    tabindex="-1"
-                                ></button>
-                                <button
-                                    class="track-pip"
-                                    data-track="3"
-                                    tabindex="-1"
-                                ></button>
-                                <button
-                                    class="track-pip"
-                                    data-track="4"
-                                    tabindex="-1"
-                                ></button>
-                                <button
-                                    class="track-pip"
-                                    data-track="5"
-                                    tabindex="-1"
-                                ></button>
-                                <button
-                                    class="track-pip"
-                                    data-track="6"
-                                    tabindex="-1"
-                                ></button>
-                                <span class="tracks-progress-label"
-                                    >Track <span id="tracks-current">1</span> /
-                                    6</span
-                                >
+                                <div class="tracks-pips-wrapper">
+                                    <button
+                                        class="track-pip active"
+                                        data-track="1"
+                                        tabindex="-1"
+                                    ></button>
+                                    <button
+                                        class="track-pip"
+                                        data-track="2"
+                                        tabindex="-1"
+                                    ></button>
+                                    <button
+                                        class="track-pip"
+                                        data-track="3"
+                                        tabindex="-1"
+                                    ></button>
+                                    <button
+                                        class="track-pip"
+                                        data-track="4"
+                                        tabindex="-1"
+                                    ></button>
+                                    <button
+                                        class="track-pip"
+                                        data-track="5"
+                                        tabindex="-1"
+                                    ></button>
+                                    <button
+                                        class="track-pip"
+                                        data-track="6"
+                                        tabindex="-1"
+                                    ></button>
+                                    <span class="tracks-progress-label"
+                                        >Track
+                                        <span id="tracks-current">1</span> /
+                                        6</span
+                                    >
+                                </div>
+
+                                <div class="tracks-nav-btns">
+                                    <button
+                                        id="track-prev-btn"
+                                        class="tracks-nav-btn"
+                                        aria-label="Previous Track"
+                                    >
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polyline
+                                                points="15 18 9 12 15 6"
+                                            ></polyline>
+                                        </svg>
+                                    </button>
+                                    <button
+                                        id="track-next-btn"
+                                        class="tracks-nav-btn"
+                                        aria-label="Next Track"
+                                    >
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polyline
+                                                points="9 18 15 12 9 6"
+                                            ></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1002,26 +1049,49 @@
                                 conference tracks.
                             </p>
                         </div>
-                        <div class="cfp-notice reveal">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                aria-hidden="true"
+
+                        <!-- Poster Preview & Notice Row -->
+                        <div class="cfp-action-row reveal">
+                            <div
+                                class="cfp-poster-preview"
+                                id="cfp-poster-trigger"
+                                title="Click to view full poster"
+                                role="button"
+                                tabindex="0"
+                                aria-label="View Call for Papers Poster"
                             >
-                                <path
-                                    d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                                <img
+                                    src="Poster.png"
+                                    alt="Call for Papers Poster preview"
+                                    class="cfp-poster-img"
+                                    loading="lazy"
                                 />
-                            </svg>
-                            <div>
-                                <strong>Peer Reviewed</strong>
-                                <span
-                                    >All submissions undergo rigorous peer
-                                    review by our expert committee.</span
+                                <div class="cfp-poster-overlay">
+                                    <span>Click to expand</span>
+                                </div>
+                            </div>
+
+                            <div class="cfp-notice">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
                                 >
+                                    <path
+                                        d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                                    />
+                                </svg>
+                                <div>
+                                    <strong>Peer Reviewed</strong>
+                                    <span
+                                        >All submissions undergo rigorous peer
+                                        review by our expert committee.</span
+                                    >
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1179,7 +1249,7 @@
                                         />
                                     </svg>
                                 </div>
-                                <h4>E-Certificates</h4>
+                                <h4>E-certificates</h4>
                                 <p>For all presenters and participants</p>
                             </div>
 
@@ -1294,7 +1364,7 @@
                                     <div class="dtl-line"></div>
                                 </div>
                                 <div class="dtl-content">
-                                    <span class="dtl-date">4th May, 2026</span>
+                                    <span class="dtl-date">04 May 2026</span>
                                     <span class="dtl-label"
                                         >Abstract Submission</span
                                     >
@@ -1307,7 +1377,7 @@
                                 </div>
                                 <div class="dtl-content">
                                     <span class="dtl-date"
-                                        >12–13 May, 2026</span
+                                        >12 – 13 May 2026</span
                                     >
                                     <span class="dtl-label dtl-label--accent"
                                         >Conference Days</span
@@ -1320,7 +1390,7 @@
                                     <div class="dtl-line"></div>
                                 </div>
                                 <div class="dtl-content">
-                                    <span class="dtl-date">25th May, 2026</span>
+                                    <span class="dtl-date">25 May 2026</span>
                                     <span class="dtl-label"
                                         >Full Paper Submission</span
                                     >
@@ -1332,7 +1402,7 @@
                                     <div class="dtl-line"></div>
                                 </div>
                                 <div class="dtl-content">
-                                    <span class="dtl-date">5th June, 2026</span>
+                                    <span class="dtl-date">05 June 2026</span>
                                     <span class="dtl-label"
                                         >Revision of Paper</span
                                     >
@@ -1343,9 +1413,7 @@
                                     <div class="dtl-dot"></div>
                                 </div>
                                 <div class="dtl-content">
-                                    <span class="dtl-date"
-                                        >20th June, 2026</span
-                                    >
+                                    <span class="dtl-date">20 June 2026</span>
                                     <span class="dtl-label"
                                         >Final Paper Submission</span
                                     >
@@ -1373,10 +1441,8 @@
                                 <thead>
                                     <tr>
                                         <th class="reg-th">Category</th>
-                                        <th class="reg-th">India Fee (₹)</th>
-                                        <th class="reg-th">
-                                            International ($)
-                                        </th>
+                                        <th class="reg-th">India Fee ₹</th>
+                                        <th class="reg-th">International $</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -1433,6 +1499,15 @@
                         <!-- QR + Register Strip -->
                         <div class="reg-qr-strip">
                             <div class="reg-qr-block">
+                                <div class="reg-qr-info">
+                                    <span class="reg-qr-label"
+                                        >Scan QR code <br />
+                                        for Registration</span
+                                    >
+                                    <!-- <span class="reg-qr-sub"
+                                        >Scan to register online</span
+                                    > -->
+                                </div>
                                 <div
                                     class="reg-qr-frame"
                                     aria-label="QR code for registration"
@@ -1443,14 +1518,6 @@
                                         class="reg-qr-img"
                                         loading="lazy"
                                     />
-                                </div>
-                                <div class="reg-qr-info">
-                                    <span class="reg-qr-label"
-                                        >QR for Registration</span
-                                    >
-                                    <span class="reg-qr-sub"
-                                        >Scan to register online</span
-                                    >
                                 </div>
                             </div>
                             <a
@@ -1837,6 +1904,14 @@
                                     <span>Executive Trainer, CTLD, TMU</span>
                                 </div>
                                 <div class="wc-item">
+                                    <strong>Ms. Gauri Takiyar</strong>
+                                    <span>Executive Trainer, CTLD, TMU</span>
+                                </div>
+                                <div class="wc-item">
+                                    <strong>Mr. Vijay Kumar</strong>
+                                    <span>Senior Trainer, CTLD, TMU</span>
+                                </div>
+                                <div class="wc-item">
                                     <strong>Mr. Rajeev Ranjan</strong>
                                     <span>Trainer, CTLD, TMU</span>
                                 </div>
@@ -1850,14 +1925,6 @@
                                 </div>
                                 <div class="wc-item">
                                     <strong>Mr. Jatin Dua</strong>
-                                    <span>Trainer, CTLD, TMU</span>
-                                </div>
-                                <div class="wc-item">
-                                    <strong>Mr. Vijay Kumar</strong>
-                                    <span>Trainer, CTLD, TMU</span>
-                                </div>
-                                <div class="wc-item">
-                                    <strong>Ms. Gauri Takiyar</strong>
                                     <span>Trainer, CTLD, TMU</span>
                                 </div>
                             </div>
@@ -1896,7 +1963,7 @@
                                     >Register Now</a
                                 >
                                 <a
-                                    href="Brochure.pdf"
+                                    href="Brochure.png"
                                     target="_blank"
                                     class="btn btn-ghost btn-lg cta-ghost"
                                     >View Brochure</a
@@ -1920,7 +1987,7 @@
                 <div class="footer-col footer-brand">
                     <div class="footer-logo-row">
                         <img
-                            src="https://cdn.jsdelivr.net/gh/Adi15Jain/assets@main/ctldConference/logo.png"
+                            src="images/logo.png"
                             alt="TMU Logo"
                             class="footer-logo-img"
                             onerror="this.style.display = 'none'"
@@ -1928,10 +1995,10 @@
                         <span class="footer-conf-name">CTLD 2026</span>
                     </div>
                     <p class="footer-tagline">
-                        International Conference on Contemporary Trends in
-                        Learning and Development, organised by the Centre for
-                        Teaching, Learning and Development, Teerthanker Mahaveer
-                        University.
+                        International Conference on Transforming Learning,
+                        Leadership & Development in a Rapidly Changing World,
+                        organised by the Centre for Teaching, Learning and
+                        Development, Teerthanker Mahaveer University.
                     </p>
                 </div>
 
@@ -2337,6 +2404,21 @@
                     </svg>
                 </li>
             </ul>
+        </div>
+
+        <!-- Poster Modal -->
+        <div id="cfp-poster-modal" class="poster-modal" aria-hidden="true">
+            <div class="poster-modal-overlay" id="cfp-modal-close-bg"></div>
+            <div class="poster-modal-content">
+                <button
+                    class="poster-modal-close"
+                    id="cfp-modal-close-btn"
+                    aria-label="Close poster"
+                >
+                    &times;
+                </button>
+                <img src="Poster.png" alt="Call for Papers Poster" />
+            </div>
         </div>
 
         <script src="script.js"></script>
